@@ -10,4 +10,5 @@ RUN apt-get update && \
 
 
 RUN pip install whisper==$GRAPHITE_VERSION && \
-    pip install https://github.com/Banno/carbon/tarball/0.9.x-fix-events-callback && \
+pip install https://github.com/Banno/carbon/tarball/0.9.x-fix-events-callback && \
+pip install graphite-web==$GRAPHITE_VERSION
